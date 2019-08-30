@@ -1,10 +1,24 @@
 {
-  "name": "envoy-authorization-header-check-js",
+  "name": "envoy-authorization-header-check",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
     "google-protobuf": "^3.9.1",
     "grpc": "^1.23.3"
-  }
+  },
+  "description": "To test, run an auth server somewhere and run node test.js.",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dio/envoy-authorization-header-check-js.git"
+  },
+  "author": "Dhi Aurrahman <dio@rockybars.com>",
+  "bugs": {
+    "url": "https://github.com/dio/envoy-authorization-header-check-js/issues"
+  },
+  "homepage": "https://github.com/dio/envoy-authorization-header-check-js#readme"
 }
