@@ -1,4 +1,4 @@
-const Client = require('./client');
+const Client = require('./');
 
 (async () => {
   const client = new Client('localhost:3001');

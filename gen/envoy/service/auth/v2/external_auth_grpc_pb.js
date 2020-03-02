@@ -1,7 +1,7 @@
 // GENERATED CODE -- DO NOT EDIT!
 
 'use strict';
-var grpc = require('grpc');
+var grpc = require('@grpc/grpc-js');
 var envoy_service_auth_v2_external_auth_pb = require('../../../../envoy/service/auth/v2/external_auth_pb.js');
 var envoy_api_v2_core_base_pb = require('../../../../envoy/api/v2/core/base_pb.js');
 var envoy_type_http_status_pb = require('../../../../envoy/type/http_status_pb.js');

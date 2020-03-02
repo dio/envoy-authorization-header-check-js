@@ -1,4 +1,4 @@
-const grpc = require('grpc');
+const grpc = require('@grpc/grpc-js');
 const externalAuth = require('./gen/envoy/service/auth/v2/external_auth_pb');
 const attributeContext = require('./gen/envoy/service/auth/v2/attribute_context_pb');
 const externalAuthService = require('./gen/envoy/service/auth/v2/external_auth_grpc_pb');
