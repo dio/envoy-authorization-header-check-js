@@ -5,7 +5,6 @@ const externalAuthService = require('./gen/envoy/service/auth/v2/external_auth_g
 
 module.exports = class Client {
   constructor(server) {
-    this.server = server;
     this.client = new externalAuthService.AuthorizationClient(
       server,
       grpc.credentials.createInsecure()
