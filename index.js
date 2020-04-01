@@ -4,18 +4,19 @@ const attributeContext = require('./gen/envoy/service/auth/v2/attribute_context_
 const externalAuthService = require('./gen/envoy/service/auth/v2/external_auth_grpc_pb');
 
 module.exports = class Client {
-  constructor(server) {
+  constructor(server, headerKey) {
     this.client = new externalAuthService.AuthorizationClient(
       server,
       grpc.credentials.createInsecure()
     );
+    this.headerKey = headerKey;
   }
 
   async check(authorization) {
     const attributeContextRequestHttp = new attributeContext.AttributeContext.HttpRequest();
     attributeContextRequestHttp
       .getHeadersMap()
-      .set('authorization', authorization);
+      .set(this.headerKey, authorization);
 
     const attributeContextRequest = new attributeContext.AttributeContext.Request();
     attributeContextRequest.setHttp(attributeContextRequestHttp);
