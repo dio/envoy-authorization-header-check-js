@@ -4,7 +4,7 @@ const attributeContext = require('./gen/envoy/service/auth/v2/attribute_context_
 const externalAuthService = require('./gen/envoy/service/auth/v2/external_auth_grpc_pb');
 
 module.exports = class Client {
-  constructor(server, headerKey) {
+  constructor(server, headerKey = 'authorization') {
     this.client = new externalAuthService.AuthorizationClient(
       server,
       grpc.credentials.createInsecure()
