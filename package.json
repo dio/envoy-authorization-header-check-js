@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@grpc/grpc-js": "^0.7.0",
+    "@grpc/grpc-js": "^1.1.8",
     "google-protobuf": "^3.11.4"
   },
   "description": "To test, run an auth server somewhere and run node test.js.",
